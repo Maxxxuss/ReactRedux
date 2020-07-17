@@ -1,10 +1,8 @@
+import { combineReducers } from 'redux';
+import metadaten from './metadaten'
 
 
-export default (initalState, actionsMap) => (state = initalState, action) => {
-    const reducerFn = actionsMap[action.type];
-    if (reducerFn) {
-        return reducerFn(state, action);
-    }
-    return state;
-};
-
+export default combineReducers({
+    metadaten,
+    
+});

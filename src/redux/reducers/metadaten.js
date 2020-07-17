@@ -1,6 +1,8 @@
 import {
     metadaten as actionTypes,
 } from '../actions/actionTypes';
+import createReducer from './create-reducer.js';
+
 
 const initalState = [];
 
